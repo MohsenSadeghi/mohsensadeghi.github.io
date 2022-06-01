@@ -1,0 +1,18 @@
+User-agent: googlebot
+Disallow: /Info_Case_1.html
+Disallow: /Info_Case_2.html
+Disallow: /Info_Case_3.html
+Disallow: /Info_Case_4.html
+Disallow: /Info_Case_5.html
+Disallow: /Info_Case_6.html
+Disallow: /Info_Case_7.html
+Disallow: /run_simulation.php
+
+
+
+
+
+
+
+
+

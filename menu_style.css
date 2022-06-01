@@ -1,0 +1,57 @@
+body
+{
+	background-color : rgb(100, 30, 40);
+}
+#title_par
+{
+	color : white;
+	font-family : Arial;
+	font-size : 14px;
+	margin-top : 10px;
+}
+#links_par
+{
+	padding : 0px;
+	margin : 0px;
+	position : absolute;
+	bottom : 30px;
+	left : 20px;
+		
+	font-family : Arial;
+	font-size : 24px;
+	line-height : 30px;
+	text-align : left;
+}
+a
+{
+	display : block;
+	width : 147px;
+	height : 30px;
+	color : white;
+	text-decoration : none;
+}
+a:hover
+{
+	color : rgb(100, 0, 0);
+	background : white;
+	padding-left : 5px;
+	text-decoration : none;
+}
+a : visited
+{
+	color : rgb(0, 0, 50);
+	text-decoration : none;
+}
+a : active
+{
+	color : white;
+	text-decoration : none;
+}
+#BlueBorder
+{
+	width : 2px;
+	height : 210px;
+	position : absolute;
+	left : 0px;
+	bottom : 30px;
+}

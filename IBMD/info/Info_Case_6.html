@@ -1,0 +1,114 @@
+﻿<a class = "Info_Close_Link" onClick = "ToggleInfoWindow();">[close]</a>
+
+<p class = "Info_Title">
+	About IBMD
+</p>
+
+<p class = "Info_Text">
+	The <b>IBMD</b> (In-Browser Molecular Dynamics) is a web application that performs Molecular Dynamics (MD) simulations and shows the
+	results in real-time (in the computational sense of the word), all inside a standard web browser.
+	The details of this particular simulation case are given in the following sections. <br /><br />
+	The IBMD lets you see physical and thermodynamic properties of the simulated system as the simulation progresses.
+	The web application relies on Javascript for doing the necessary computations and employs WebGL and HTML5 capabilities for presentation.
+	The processes are all client-side and they use your computer's, tablet's, or phone's CPU.
+	The simulation has no server-side computational cost. So, feel free to continue the simulation for as long as you like!
+</p>
+
+<p class = "Info_Title">
+	Case 6: Argon-Neon.3D.LJ.NVT
+</p>
+
+<br />
+<p class = "Info_Subtitle">
+	Simulation box
+</p>
+
+<p class = "Info_Text">
+	The simulation box consists of 216 atoms, 30% <b>argon</b> and 70% <b>neon</b>. The mixture is placed in a 3-dimensional cubic box with sides <b>5 nm</b> in length.
+	Atoms are initially positioned on an ordered lattice and given the same speed with random moving directions. Argon and neon atoms are initially unmixed.
+	<a class = "Info_Link" href = "http://en.wikipedia.org/wiki/Periodic_boundary_conditions" target = "_blank">Periodic boundary conditions</a>
+	are applied in the X, Y, and Z directions. The minimum image convention is used to handle the periodic images
+	in calculating interaction energies and forces.
+</p>
+
+<p class = "Info_Subtitle">
+	Statistical ensemble
+</p>
+
+<p class = "Info_Text">
+	The simulation is carried out in the 
+	<a class = "Info_Link" href = "http://en.wikipedia.org/wiki/Canonical_ensemble" target = "_blank">canonical</a>
+	or <b>NVT</b> ensemble, which means that the number of particles (N),
+	the volume of the system (V), and its temperature (T) are constant. 
+</p>
+
+<p class = "Info_Subtitle">
+	Interactions
+</p>
+
+<p class = "Info_Text">
+	<a class = "Info_Link" href = "http://en.wikipedia.org/wiki/Lennard-Jones_potential" target = "_blank">Lennard-Jones 6-12</a>
+	potential function is used to model the pair-wise interactions of argon and neon atoms.
+	The parameters of the potential are taken from information provided by SklogWiki pages on
+	<a class = "Info_Link" href = "http://www.sklogwiki.org/SklogWiki/index.php/Argon" target = "_blank">argon </a> and
+	<a class = "Info_Link" href = "http://www.sklogwiki.org/SklogWiki/index.php/Neon" target = "_blank">neon</a>.<br /><br />
+	
+	<b>Lorentz-Berthelot</b> mixing rule is used for crossed interactions. You may visit this 
+	<a class = "Info_Link" href = "http://www.sklogwiki.org/SklogWiki/index.php/Combining_rules" target = "_blank">SklogWiki page</a>
+	on different mixing rules.
+	No cut-off other than what is forced by the minimum image convention is used. 
+</p>
+
+<p class = "Info_Subtitle">
+	Time integration
+</p>
+
+<p class = "Info_Text">
+	Equations of motion are integrated using the velocity Verlet algorithm. You can learn more about this algorithm from this
+	<a class = "Info_Link" href = "http://en.wikipedia.org/wiki/Verlet_integration" target = "_blank">Wikipedia page</a> on Verlet integration.<br /><br />
+	A timestep of <b>10 fs</b> is used for time integration.
+</p>
+
+<p class = "Info_Subtitle">
+	Thermostat
+</p>
+
+<p class = "Info_Text">
+	In order to maintain constant temperature in the simulation, the 
+	<a class = "Info_Link" href = "http://en.wikipedia.org/wiki/Berendsen_thermostat" target = "_blank">Berendsen thermostat</a> is used. 
+	The Berendsen thermostat acts through scaling velocity vectors based on the ratio of current temperature to the setpoint temperature.
+	
+</p>
+
+<p class = "Info_Subtitle">
+	Output
+</p>
+
+<p class = "Info_Text">
+	To the right of the page, you see an animated 3D output showing the positions of particles in the simulation box. The particles are
+	illustrated by spheres with	radii equal to the van der Waals radii. <br/><br/>
+	To the left, there is a table displaying thermodynamic properties of the system.
+	Using Real-time Plot option, you can plot graphs of these properties
+	versus time and see them fluctuate as the simulation progresses or as you use the controls. <br /><br />
+</p>
+
+<p class = "Info_Subtitle">
+	Controls
+</p>
+
+<p class = "Info_Text">
+	The simulation starts by pressing the <b>Start</b> button and stops by pressing <b>Stop</b>. You can resume a stopped 
+	simulation by pressing the <b>Start</b> button agian. You can also restart a simulation, whether running or stopped, to the initial
+	state by pressing the <b>Reset</b> button.<br/><br/>
+	You can change setpoint temperature of the thermostat using <b>T ▲</b> and <b>T ▼</b> buttons. When the setpoint temperure changes,
+	the Berendsen thermostat starts adjusting the system temperature to match the setpoint value. 
+	But this process takes time and you have to wait briefly for the system 
+	temperature to reach the designated value. You can check this by plotting temperature versus time and monitoring
+	the fluctuations.<br/><br/>
+	To the left of the visual output frame, you see camera controls, up, down, pan, tilt, etc. Using these buttons, you 
+	can move your viewpoint inside the scene and change the viewing angle to better see the details of the 3D simulation. Apart from these buttons,
+	you can drag on the visual frame to tilt/pan the camera and use mouse wheel for forward/backward movements. There are also
+	keyboard shortcuts associated with most of camera movements. Hover over each camera control buttons to see the respective keyboard shortcut.
+</p>
+
+<a class = "Info_Close_Link" onClick = "ToggleInfoWindow();">[close]</a>

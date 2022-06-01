@@ -1,0 +1,68 @@
+body
+{
+	background-color:#ffffff;
+}
+a
+{
+	color : rgb(100, 0, 0);
+	text-decoration : none;
+}
+a:hover
+{
+	color : rgb(200, 20, 20);
+	text-decoration : none;
+}
+a:visited
+{
+	text-decoration : none;
+}
+a:active
+{
+	color : rgb(100, 0, 0);
+	text-decoration : none;
+}
+.Text
+{
+	font-family : Arial;
+	font-size : 18px;
+	color : rgb(50, 50, 50);
+	margin : 0px;
+	padding : 0px;
+	padding-top : 20px;
+	padding-right : 20px;
+}
+.Title
+{
+	font-family : Arial;
+	font-size : 32px;
+	margin : 0px;
+	margin-top : 20px;
+	padding : 0px;
+	color : rgb(0, 100, 150);	
+}
+.Sub_Title
+{
+	color : rgb(100, 0, 0);
+	font-family : Arial;
+	font-size : 18px;
+	font-weight : bold;
+	margin : 0px;
+	margin-top : 20px;
+	padding : 0px;
+}
+.Bullet
+{
+	font-family : Arial;
+	font-size : 18px;
+	color : rgb(50, 50, 50);
+	padding : 10px;
+	padding-left : 35px;
+	padding-right : 35px;
+	margin : 0px;
+}
+.Caption
+{
+	font-family : Arial;
+	font-size : 18px;
+	color : rgb(50, 50, 50);
+}

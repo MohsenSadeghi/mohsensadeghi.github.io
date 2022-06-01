@@ -1,0 +1,19 @@
+User-agent: googlebot
+Disallow: /menu.htm
+Disallow: /home.htm
+Disallow: /bio.htm
+Disallow: /downloads.htm
+Disallow: /feedback.htm
+Disallow: /home.htm
+Disallow: /links.htm
+Disallow: /publications.htm
+Disallow: /works.htm
+Disallow: /Temp
+
+
+
+
+
+
+
+

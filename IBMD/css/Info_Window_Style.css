@@ -1,0 +1,69 @@
+.Info_Title
+{
+	color : black;
+	font-family : Arial;
+	font-weight : bold;
+	font-size : 150%;
+	padding : 0px;
+	margin : 0px;
+}
+
+.Info_Subtitle
+{
+	color : rgb(150, 0, 0);
+	font-family : Arial;
+	font-weight : bold;
+	font-size : 120%;
+	padding : 0px;
+	margin : 0px;
+}
+
+.Info_Text
+{
+	color : black;
+	font-family : Arial;
+	font-size : 100%;
+	text-align : justify;
+}
+
+.Info_Message
+{
+	color : black;
+	font-family : Arial;
+	font-weight : bold;
+	font-size : 100%;
+}
+
+.Info_Link
+{
+	color : rgb(200, 0, 0);
+	text-decoration : none;
+}
+
+.Info_Link:hover
+{
+	color : rgb(250, 100, 100);
+	text-decoration : none;
+}
+
+.Info_Link:visited
+{
+	text-decoration : none;
+}
+
+.Info_Link:active
+{
+	color : rgb(150, 100, 100);
+	text-decoration : none;
+}
+
+.Info_Close_Link
+{
+	cursor : pointer;
+	font-family : arial;
+	font-weight : bold;
+	color : rgb(200, 0, 0);
+	text-decoration : none;
+	position : absolute;
+	right : 3%;
+}

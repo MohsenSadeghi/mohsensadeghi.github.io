@@ -1,0 +1,130 @@
+﻿<a class = "Info_Close_Link" onClick = "ToggleInfoWindow();">[close]</a>
+
+<p class = "Info_Title">
+	About IBMD
+</p>
+
+<p class = "Info_Text">
+	The <b>IBMD</b> (In-Browser Molecular Dynamics) is a web application that performs Molecular Dynamics (MD) simulations and shows the
+	results in real-time (in the computational sense of the word), all inside a standard web browser.
+	The details of this particular simulation case are given in the following sections. <br /><br />
+	The IBMD lets you see physical and thermodynamic properties of the simulated system as the simulation progresses.
+	The web application relies on Javascript for doing the necessary computations and employs HTML5 capabilities for presentation.
+	The processes are all client-side and they use your computer's, tablet's, or phone's CPU.
+	The simulation has no server-side computational cost. So, feel free to continue the simulation for as long as you like!
+</p>
+
+<p class = "Info_Title">
+	Case 3: Argon.2D.LJ.NpT
+</p>
+
+<br />
+<p class = "Info_Subtitle">
+	Simulation box
+</p>
+
+<p class = "Info_Text">
+	The simulation box consists of 225 <b>argon</b> atoms placed in a 2-dimensional square with sides initially 20 nm in length.
+	argon atoms are initially positioned on an ordered lattice and given the same speed with random moving directions.
+	<a class = "Info_Link" href = "http://en.wikipedia.org/wiki/Periodic_boundary_conditions" target = "_blank">Periodic boundary conditions</a>
+	are applied in the X and Y directions. The minimum image convention is used to handle the periodic images
+	in calculating interaction energies and forces.
+</p>
+
+<p class = "Info_Subtitle">
+	Statistical ensemble
+</p>
+
+<p class = "Info_Text">
+	The simulation is carried out in the 
+	<a class = "Info_Link" href = "http://en.wikipedia.org/wiki/Isothermal-isobaric_ensemble" target = "_blank">isothermal-isobaric</a>
+	or <b>NpT</b> ensemble, which means that the number of particles (N),
+	the pressure of the system (p), and its temperature (T) are constant. 
+</p>
+
+<p class = "Info_Subtitle">
+	Interactions
+</p>
+
+<p class = "Info_Text">
+	<a class = "Info_Link" href = "http://en.wikipedia.org/wiki/Lennard-Jones_potential" target = "_blank">Lennard-Jones 6-12</a>
+	potential function is used to model the pair-wise interactions of argon atoms.
+	The parameters of the potential (Epsilon and Sigma) are taken from information provided by this 
+	<a class = "Info_Link" href = "http://www.sklogwiki.org/SklogWiki/index.php/argon" target = "_blank">SklogWiki page</a> on argon.<br /><br />
+	No cut-off other than what is forced by the minimum image convention is used. 
+	
+</p>
+
+<p class = "Info_Subtitle">
+	Time integration
+</p>
+
+<p class = "Info_Text">
+	Equations of motion are integrated using the velocity Verlet algorithm. You can learn more about this algorithm from this
+	<a class = "Info_Link" href = "http://en.wikipedia.org/wiki/Verlet_integration" target = "_blank">Wikipedia page</a> on Verlet integration.<br /><br />
+	A relatively large timestep of <b>20 fs</b> is used for time integration, so in order to to maintain the
+	stability of the simulated system, an upper limit of ~800 K is put on the temperature that can be achieved
+	through controls.
+	
+</p>
+
+<p class = "Info_Subtitle">
+	Thermostat
+</p>
+
+<p class = "Info_Text">
+	In order to maintain constant temperature in the simulation, the 
+	<a class = "Info_Link" href = "http://en.wikipedia.org/wiki/Berendsen_thermostat" target = "_blank">Berendsen thermostat</a> is used. 
+	The Berendsen thermostat acts through scaling velocity vectors based on the ratio of current temperature to the setpoint temperature.
+</p>
+
+<p class = "Info_Subtitle">
+	Barostat
+</p>
+
+<p class = "Info_Text">
+	In order to maintain constant pressure in the simulation, the 
+	<a class = "Info_Link" href = "http://www.pages.drexel.edu/~cfa22/msim/node36.html" target = "_blank">Berendsen barostat</a> is used. 
+	The Berendsen barostat acts through changing the volume of the simulation box based on the difference between current pressure
+	and the setpoint value.
+</p>
+
+<p class = "Info_Subtitle">
+	Output
+</p>
+
+<p class = "Info_Text">
+	To the right of the page, you see an animated output showing the positions of particles in the simulation box. The particles are
+	illustrated by circles with	radii equal to the actual van der Waals radii of argon atoms. A small scale-bar at the lower left
+	corner of the picture shows the scale at which you are seeing the simulation box.<br /><br />
+	To the left, there is a table displaying thermodynamic properties of the system.
+	Using Real-time Plot option, you can plot graphs of these properties
+	versus time and see them fluctuate as the simulation progresses or as you use the controls. <br /><br />
+	Real-time Plot also contains options for plotting <b>"Speed Distribution"</b> and <b>"Radial Distribution Function"</b>.
+	These two graphs are plotted using values obtained by sequential sampling of simulation data, which means that the data are obtained and stored in
+	each plotting step, and then averaged through time to give a smooth and reliable output. 
+	So, if you choose these options, you need to wait for enough sampled data to accumulate
+	and the graphs to settle on accurate mean values.	
+</p>
+
+<p class = "Info_Subtitle">
+	Controls
+</p>
+
+<p class = "Info_Text">
+	The simulation starts by pressing the <b>Start</b> button and stops by pressing <b>Stop</b>. You can resume a stopped 
+	simulation by pressing the <b>Start</b> button agian. You can also restart a simulation, whether running or stopped, to the initial
+	state by pressing the <b>Reset</b> button.<br/><br/>
+	You can change setpoint temperature and pressure using <b>T ▲</b>, <b>T ▼</b>, <b>p ▲</b> and <b>p ▼</b> buttons. 
+	When the setpoint temperure (or pressure) changes, the Berendsen thermostat (or barostat)
+	starts adjusting the system temperature (or pressure) to match the setpoint value.
+	But this process takes time and you have to wait briefly for the system 
+	temperature (or pressure) to reach the designated value. You can check this by plotting temperature (or pressure) versus time and monitoring
+	the fluctuations. You can also see the effect of Berendsen barostat by plotting Volume vesus time.<br/><br/>
+	You can add atoms to the simulation box at any moment by clicking on a vacant position inside the simulation box. The added atom
+	is shown in a darker color. The initial speed of the added atom is set to the most probable velocity of an ideal gas atom
+	at the current temperature of the system. Its direction of movement is chosen randomly. You can also remove atoms, either the 
+	original ones or the ones that you have added, by clicking on them.
+</p>
+
+<a class = "Info_Close_Link" onClick = "ToggleInfoWindow();">[close]</a>

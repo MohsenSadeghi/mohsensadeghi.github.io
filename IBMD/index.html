@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta http-equiv = "Content-Type" content="text/html; charset=utf-8" />
+	<meta name = "description" content = "In-Browser Molecular Dynamics Simulation" />
+	<meta name = "keywords" content = "Molecular Dynamics, MD, In-Browser Simulation, Web Application, Javascript, HTML5" />
+
+	<link rel = "stylesheet" type = "text/css" href = "css/Selection_Page_Style.css" />
+	
+	<base target = "_top" />
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-24664845-2', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+		
+	<title>
+		IBMD
+	</title>
+	
+</head>
+
+<body id = "Page_Frame">
+	<div id = "Selection_Table_Container">
+		<table id = "Selection_Table">
+			<tr>
+				<td colspan = "2">
+					<span class = "Selection_Title"> In-Browser Molecular Dynamics (IBMD)</span> <br />
+					<span class = "Selection_Text">Created by
+						<a href = "http://userpage.fu-berlin.de/sadeghi" class = "Selection_Link" target = "_blank"> Mohsen Sadeghi</a>
+					</span>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan = "2">
+					<span class = "Selection_Subtitle">Select a simulation case</span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a class = "Selection_Button" href = "run_simulation.php?sim_case=1">Case 1:<br/> Argon.2D.LJ.NVE</a>
+				</td>
+				<td>
+					<a class = "Selection_Button" href = "run_simulation.php?sim_case=2">Case 2:<br/> Argon.2D.LJ.NVT</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a class = "Selection_Button" href = "run_simulation.php?sim_case=3">Case 3:<br/> Argon.2D.LJ.NpT</a>
+				</td>
+				<td>
+					<a class = "Selection_Button" href = "run_simulation.php?sim_case=4">Case 4:<br/> Argon-Neon.2D.LJ.NVT</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a class = "Selection_Button" href = "run_simulation.php?sim_case=5">Case 5:<br/> NaCl.2D.LJ-EL.NVT</a>
+				</td>
+				<td>
+					<a class = "Selection_Button_Hot" href = "run_simulation.php?sim_case=6">Case 6:<br/> Argon-Neon.3D.LJ.NVT</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a class = "Selection_Button_Hot" href = "run_simulation.php?sim_case=7">Case 7:<br/> Water.3D.SPC/Fw.NVT</a>
+				</td>
+				<td>
+					<a class = "Selection_Button_Hot" href = "run_simulation.php?sim_case=8">Case 8:<br/> Ne@C60.3D.AMBER-LJ.NVT</a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan = "2">
+					<a class = "Selection_Button_Hot" href = "run_simulation.php?sim_case=9">Case 9:<br/> Water-Graphene.3D.AMBER-SPC/Fw-LJ.NVT</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<!--
+	<div id = "Copyright_Paragraph_Container">
+		<span id = "Copyright_Paragraph">
+			Copyright (c) 2015 Mohsen Sadeghi. Published under GNU General Public License.
+		</span>
+	</div>
+	-->
+</body>
+
+</html>
