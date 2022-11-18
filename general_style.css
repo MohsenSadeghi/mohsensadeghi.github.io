@@ -4,7 +4,7 @@ body
 }
 a
 {
-	color : rgb(80, 50, 80);
+	color : rgb(120, 40, 110);
 	text-decoration : none;
 }
 a:hover
@@ -21,15 +21,21 @@ a:active
 	color : rgb(200, 20, 100);
 	text-decoration : none;
 }
+li{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 .Text
 {
 	font-family : Arial;
 	font-size : 18px;
+	font-kerning :normal;
 	color : rgb(50, 50, 50);
 	margin : 0px;
 	padding : 0px;
-	padding-top : 20px;
-	padding-right : 20px;
+	padding-top : 10px;
+	padding-left : 10px;
+	padding-right : 50px;
 }
 .Title
 {
@@ -38,17 +44,19 @@ a:active
 	margin : 0px;
 	margin-top : 20px;
 	padding : 0px;
+	padding-left : 10px;
 	color : rgb(0, 100, 130);	
 }
 .Sub_Title
 {
-	color : rgb(100, 80, 80);
+	color : rgb(200, 80, 20);
 	font-family : Arial;
-	font-size : 18px;
+	font-size : 20px;
 	font-weight : bold;
 	margin : 0px;
 	margin-top : 20px;
 	padding : 0px;
+	padding-left : 10px
 }
 .Bullet
 {
@@ -60,9 +68,21 @@ a:active
 	padding-right : 35px;
 	margin : 0px;
 }
+.BulletCircle
+{
+	color : #333;
+	font-family : Arial;
+	font-size : 18px;
+	list-style-type : circle;
+}
 .Caption
 {
 	font-family : Arial;
+	font-weight : bold;
 	font-size : 18px;
 	color : rgb(50, 50, 50);
+	padding : 0px;
+	padding-top : 10px;
+	padding-left : 10px;
 }
+

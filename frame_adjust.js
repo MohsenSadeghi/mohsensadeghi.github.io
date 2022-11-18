@@ -5,21 +5,28 @@ function FrameResize() {
 	PageWidth = window.innerWidth;
 	PageHeight = window.innerHeight;
 
-	var F1 = parent.document.getElementById('MenuFrame');
-	var F2 = parent.document.getElementById('PageContent');
+	var menu_div = parent.document.getElementById('MenuFrame');
+	var page_div = parent.document.getElementsByClassName('PageContent')[0];
 	
-	F1.style.position = 'fixed';
-	F1.style.top = '10px';
-	F1.style.left = '10px';
-	F1.style.width = '250px';
-	F1.style.height = PageHeight - 20 + 'px';
+	menu_div.style.position = 'fixed';
+	menu_div.style.top = '10px';
+	menu_div.style.left = '10px';
+	menu_div.style.width = '250px';
+	menu_div.style.height = PageHeight - 20 + 'px';
 	
-	F2.style.position = 'absolute';
-	F2.style.top = '0px';
-	F2.style.left = '270px';
+	page_div.style.position = 'absolute';
+	page_div.style.top = '0px';
+	page_div.style.left = '270px';
+	page_div.style.right = '10px';
 	
-	F1.style.visibility = 'visible';
-	F2.style.visibility = 'visible';
+	
+	if (page_div.offsetHeight < PageHeight - 10)
+	{
+		page_div.style.height = PageHeight - 10 + 'px';
+	}
+	
+	menu_div.style.visibility = 'visible';
+	page_div.style.visibility = 'visible';
 }
 
 window.onresize = function(event) { FrameResize(); };
