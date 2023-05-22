@@ -27,34 +27,36 @@ li{
 }
 .Text
 {
-	font-family : Arial;
+    text-align: justify;
+    text-justify: inter-word;
+	font-family : Cabin;
 	font-size : 18px;
 	font-kerning :normal;
 	color : rgb(50, 50, 50);
 	margin : 0px;
-	padding : 0px;
-	padding-top : 10px;
-	padding-left : 10px;
-	padding-right : 50px;
+	padding : 20px;
+	padding-left : 40px;
+	padding-right : 40px;
 }
 .Title
 {
-	font-family : Arial;
+	font-family : Cabin;
 	font-size : 32px;
+	font-weight: bold;
 	margin : 0px;
-	margin-top : 20px;
+	margin-top : 10px;
 	padding : 0px;
 	padding-left : 10px;
-	color : rgb(0, 100, 130);	
+	color : rgb(100, 120, 150);	
 }
 .Sub_Title
 {
-	color : rgb(200, 80, 20);
+	color : rgb(170, 120, 100);
 	font-family : Arial;
 	font-size : 20px;
 	font-weight : bold;
 	margin : 0px;
-	margin-top : 20px;
+	margin-top : 10px;
 	padding : 0px;
 	padding-left : 10px
 }
