@@ -1,11 +1,5 @@
 function FrameResize() {
 
-	var PageWidth;
-	var PageHeight;
-	
-	PageWidth = window.innerWidth;
-	PageHeight = window.innerHeight;
-
 	var menu_div = parent.document.getElementById('MenuFrame');
 	var page_div = parent.document.getElementsByClassName('PageContent')[0];
 	var masthead_div = parent.document.getElementById('Masthead');
@@ -14,7 +8,7 @@ function FrameResize() {
 	menu_div.style.top = '10px';
 	menu_div.style.left = '10px';
 	menu_div.style.width = '250px';
-	menu_div.style.height = PageHeight - 20 + 'px';
+	menu_div.style.height = window.innerHeight - 20 + 'px';
 	
 	page_div.style.position = 'absolute';
 	page_div.style.top = '0px';
@@ -29,7 +23,7 @@ function FrameResize() {
         var photo_aspect_ratio = masthead_photo.naturalWidth / masthead_photo.naturalHeight;
         var name_aspect_ratio = masthead_name.naturalWidth / masthead_name.naturalHeight;
         
-        var max_width = PageWidth - 295;
+        var max_width = window.innerWidth - 295;
         var best_width = Math.min(max_width, 1200);
         
     	masthead_photo.width = best_width;
@@ -41,10 +35,10 @@ function FrameResize() {
        	    masthead_name.height = max_width / name_aspect_ratio;
        	}
 	}
-	
-	if (page_div.offsetHeight < PageHeight - 10)
+
+	if (page_div.offsetHeight < innerHeight - 10)
 	{
-		page_div.style.height = PageHeight - 10 + 'px';
+		page_div.style.height = innerHeight - 10 + 'px';
 	}
 	
 	menu_div.style.visibility = 'visible';
