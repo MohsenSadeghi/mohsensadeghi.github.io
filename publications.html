@@ -22,6 +22,8 @@
 	</style>
 	
 	<script type = "text/javascript" src = "frame_adjust.js"></script>
+	<script type = "text/javascript" src = "parse-bibtex.js"></script>
+	<script type = "text/javascript" src = "update_publication.js"></script>
 
 	<title>
 		Mohsen Sadeghi' Homepage - Publication
@@ -41,6 +43,7 @@
 
 <body onLoad = "FrameResize();">
 	
+	<iframe id = "BibTexFile" src = "my_papers.txt" style="display: none;"></iframe>	
 	<iframe id = "MenuFrame" src = "menu.html" name = "menuFrame" frameBorder = "0"> </iframe>
 
 	<div class = "PageContent">
@@ -49,10 +52,12 @@
 	<p class = "Bullet"><a href="https://scholar.google.com/citations?user=1Qh4VKcAAAAJ&hl=en">My Google Scholar page</a></p><br/>
 
 	<p class = "Sub_Title" > Journal articles </p>
+	
+	<!--<div id = "PublicationListContainer"></div> -->
 	<ol class = "Bullet">
         <li> B. Bogdanow, I. Gruska, L. Mühlberg, J. Protze, S. Hohensee, B. Vetter, M. Lehmann, <b>M. Sadeghi</b>, Lüder Wiebusch, Fan Liu “<a href = "https://doi.org/10.1101/2022.05.02.490278">Spatial, quantitative and functional deconstruction of virus and host protein interactions inside intact cytomegalovirus particles</a>”, <i>Nature Microbiology</i> (2023) [accepted]. </li>
         <li> M. M. Galama, H. Wu, A. Krämer, <b>M. Sadeghi</b>, Frank Noé, “<a href = "https://doi.org/10.1021/acs.jctc.2c00976">Stochastic approximation to MBAR and TRAM: batch-wise free energy estimation</a>”, <i>Journal of Chemical Theory and Computation</i> (2022) 19(3):758-766. </li>
-        <li> M. Dyhr,  <b>M. Sadeghi</b>, R. Moynova, C. Knappe, B. Kepsutlu, S. Werner, G. Schneider, J. McNally, F. Noé, H. Ewers, “<a href = "https://doi.org/10.1101/2022.05.16.492055">3D-surface reconstruction of cellular cryo-soft X-ray microscopy tomograms using semi-supervised deep learning</a>”, <i>PNAS</i> (2023) [accepted]. </li>
+        <li> M. Dyhr,  <b>M. Sadeghi</b>, R. Moynova, C. Knappe, B. Kepsutlu, S. Werner, G. Schneider, J. McNally, F. Noé, H. Ewers, “<a href = "https://doi.org/10.1073/pnas.2209938120">3D-surface reconstruction of cellular cryo-soft X-ray microscopy tomograms using semi-supervised deep learning</a>”, <i>Proceedings of the National Academy of Sciences</i> (2023) 120 (24): e2209938120. </li>
         <li> <b>M. Sadeghi</b>, “<a href = "https://doi.org/10.1101/2022.11.09.515891">Free energy profile and kinetics of the formation of membrane invaginations by membrane-bending peripheral proteins</a>”, <i>bioRxiv</i> (2022) 515891. </li>
         <li> D. de Jong-Bolm,  <b>M. Sadeghi</b>, G. Bao, G. Klaehn, M. Hoff, L. Mittelmeier, F. B. Basmanav,  F. Opazo,  F. Noé,  S. O. Rizzoli, “<a href = "https://doi.org/10.1101/2022.06.03.494744">Protein nanobarcodes enable single-step multiplexed fluorescence imaging</a>”, <i>bioRxiv</i> (2022) 494744. </li>
         <li> <b>M. Sadeghi</b>, “<a href = "https://doi.org/10.1039/D2SM00118G">Investigating the entropic nature of membrane-mediated interactions driving the aggregation of peripheral proteins</a>”, <i>Soft Matter</i> (2022) 18:3917-3927. </li>
@@ -72,7 +77,7 @@
 		<li> <b> M. Sadeghi </b>, R. Naghdabadi, “<a href = "https://dx.doi.org/10.1504/IJNM.2010.033879">Stability analysis of carbon nanotubes using a hybrid atomistic-structural element</a>”, <i> International Journal of Nanomanufacturing </i> (2009) 5(3/4):366-375 </li> 
 		<li> <b> M. Sadeghi </b>, M. Ozmaian, R. Naghdabadi, “<a href = "https://doi.org/10.1088/0022-3727/41/20/205411">Stability analysis of carbon nanotubes under electric fields and compressive loading</a>”, <i> Journal of Physics D: Applied Physics </i> (2008) 41:205411. </li>
 	</ol>
-	
+
 	<p class = "Sub_Title" > Book </p>
 	<ol class = "Bullet">
 		<li> <b> M. Sadeghi </b> 2010 “<a href = "http://www.amazon.com/Nonlinear-Mechanical-Analysis-Carbon-Nanostructures/dp/3843369917/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1292540760&amp;sr=1-1">Nonlinear mechanical analysis of carbon nanostructures: Numerical simulation using the hybrid atomistic-structural method</a>” <i>(Saarbrücken: Lambert Academic Publishing). </i> </li>
