@@ -14,6 +14,7 @@ function FrameResize() {
 	page_div.style.top = '0px';
 	page_div.style.left = '270px';
 	page_div.style.right = '10px';
+	//page_div.style.bottom = '10px';
 	
 	if (masthead_div)
 	{
@@ -36,9 +37,9 @@ function FrameResize() {
        	}
 	}
 
-	if (page_div.offsetHeight < innerHeight - 10)
+	if (page_div.offsetHeight < window.innerHeight - 20)
 	{
-		page_div.style.height = innerHeight - 10 + 'px';
+		page_div.style.height = window.innerHeight - 20 + 'px';
 	}
 	
 	menu_div.style.visibility = 'visible';
