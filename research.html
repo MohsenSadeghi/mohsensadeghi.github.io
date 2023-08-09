@@ -45,14 +45,23 @@
 	<div class = "PageContent">
 	
 	<p class = "Title" >Research</p>
+	<p class = "Sub_Title"> Coarse-grained model of human cytomegalovirus</p>
+	<p class = "Text"> In a recent collaboration, I helped researchers from <a href="https://www.theliulab.com"> Prof. Fan Liu's lab</a> to build a comprehensive model of the human cytomegalovirus (HCMV) particles.<br/>
+	We used information from quantitative proteomics as well as cross-linking mass spectrometry to model a wide range of viral and host proteins inside the virion. <br/>
+	Models of glycoproteins (shown in red in the image) as well as the capsid (blue-green particles in the image) are built from cryoEM and/or AlphaFold2 predictions. <br/>
+	The model is published as part of <a href="https://doi.org/10.1038/s41564-023-01433-8"> this <i> Nature Microbiology</i></a> paper.
+	<p class = "Caption" align = "center">
+		<img src = "images/HCMV_section.png" width="500" alt = "Sectioned view of the coarse-grained model of HCMV" border = "0"><br/>
+		Sectioned view of the coarse-grained model of the HCMV.
+	</p>
 	<p class = "Sub_Title"> Particle-based modeling of membranes</p>
-	<p class = "Text"> My main research focus is on modeling membrane-involved biological processes.
-	I have developed a coarse-grained model of bilayer membranes.
-	This model mimics the mechanics of the membrane via bonded interactions, with a force field optimized against the curvature elasticity of the membrane.
-	It also includes bond-flipping Monte Carlo moves for in-plane fluidity.
-	Additionally, I developed a hydrodynamics method for anisotropically coupling the membrane particles to the surrounding fluid environment.
-	You can see the model in action by checking <a href = "https://simularium.allencell.org/viewer?trajFileName=nanoparticle_wrapping.simularium">this Simularium visualization</a> from the Allen Institute.
-	
+	<p class = "Text"> My main research focus has been on modeling membrane-involved biological processes.
+	As my main simulation tool, I have developed a highly coarse-grained model of bilayer membranes.<br/>
+	This model mimics the mechanics of the membrane via bonded interactions, with a force field optimized against the curvature elasticity of the membrane.<br/>
+	Additionally, I developed a hydrodynamics method for anisotropically coupling the membrane particles to the surrounding fluid environment.<br/>
+	The combinaiton of this membrane model and the hydrodynamic coupling procedure constitutes <a href="https://doi.org/10.1038/s41467-020-16424-0"> this <i> Nature Communications</i></a> paper.<br/>
+	You can see the model in action by checking <a href = "https://simularium.allencell.org/viewer?trajFileName=nanoparticle_wrapping.simularium">this Simularium visualization</a> from the Allen Institute.<br/>
+	Additionally, I have used "force field masking" to incorporate membrane-bending peripheral proteins in the model (blue particles in the movie).
 	<p class = "Caption" align = "center">
 		<video height="400" controls>
 			<source src="movies/shiga_aggregation.mp4" type="video/mp4">

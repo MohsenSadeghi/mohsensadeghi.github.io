@@ -25,11 +25,11 @@
 }
 #HomepageContent
 {
-    background-image:
+    /*background-image:
     linear-gradient(to bottom, rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 0.7)),
     url('images/shiga_scale_1.png');
     background-size: cover;
     background-repeat: no-repeat;
     padding : 0px;
-    margin : 0px;
+    margin : 0px;*/
 }
