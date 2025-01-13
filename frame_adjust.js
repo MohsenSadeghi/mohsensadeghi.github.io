@@ -25,7 +25,7 @@ function FrameResize() {
         var name_aspect_ratio = masthead_name.naturalWidth / masthead_name.naturalHeight;
         
         var max_width = window.innerWidth - 295;
-        var best_width = Math.min(max_width, 1200);
+        var best_width = Math.min(max_width, 1000);
         
     	masthead_photo.width = best_width;
     	masthead_photo.height = best_width / photo_aspect_ratio;
