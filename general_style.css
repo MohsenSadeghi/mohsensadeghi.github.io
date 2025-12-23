@@ -1,90 +1,208 @@
-body
+html, body
 {
-	background-color:#ffffff;
+    background-color:rgb(250, 250, 250);
+    margin: 0px;
+    scroll-behavior: smooth;
 }
+
+.Panel {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem 2rem;
+}
+
+[data-animate] {
+  opacity: 0;
+  transform: translateY(0); /* no offset in the “resting” state */
+}
+
+[data-animate].in-view {
+  animation: fadeInUp 1200ms ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* respects reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  [data-animate] { transition: none; transform: none; opacity: 1; }
+}
+
+/* Header stays on top */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: rgba(255, 250, 235, 0.6); /* semi-transparent white */
+    backdrop-filter: blur(8px);           /* nice blur effect */
+    border-bottom: 1px solid #eee;
+    z-index: 1000; /* ensure it’s above sections */
+}
+
+/* Nav styling */
+.site-header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0.15rem 0.0rem;
+    height: 100%;
+    align-items: center;
+}
+
+.site-header nav a {
+    color: rgb(160, 160, 160);
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.15em 0.8em;
+    #background-color: rgba(250, 250, 250, 0.6);
+    #border-radius: 9999px;
+
+    transition: color 0.2s;
+}
+
+.site-header nav a:hover {
+    text-decoration: none;
+    display: inline-block;          /* let padding & border-radius apply around text */
+    #padding: 0.15em 0.8em;           /* space inside the "block" */
+    #background-color: rgb(200, 200, 200);      /* block background */
+    color: #ff796cbb;                   /* text color */
+    backdrop-filter: blur(8px); 
+    border-radius: 9999px;             /* rounded corners */
+    text-decoration: none;          /* remove default underline */
+    transition: background 0.2s;
+
+    #color : #8cb7b1;
+}
+
+.site-header nav li.is-active > a {
+  #font-weight: 600;
+  #color: white;                 
+  color: #ff796cff;
+  #border-bottom: 2px solid currentColor; /* or any highlight you like */
+}
+
 a
 {
-	color : rgb(120, 40, 110);
-	text-decoration : none;
+    color : #cf6275;
+    text-decoration : none;
 }
 a:hover
 {
-	color : rgb(200, 20, 100);
-	text-decoration : none;
+    color : #ff796c;
+    text-decoration : none;
 }
 a:visited
 {
-	text-decoration : none;
+    text-decoration : none;
 }
 a:active
 {
-	color : rgb(200, 20, 100);
-	text-decoration : none;
+    color : #ff796c;
+    text-decoration : none;
 }
-li{
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-.Text
+.TextLarge, .Text, .TextSmall, .TextSmaller, .Title, .SubTitle, .Caption
 {
     text-align: justify;
     text-justify: inter-word;
-	font-family : Arial;
-	font-size : 18px;
-	font-kerning :normal;
-	color : rgb(50, 50, 50);
-	margin : 0px;
-	padding : 20px;
-	padding-left : 40px;
-	padding-right : 40px;
+    font-family : Roboto Light, Arial;
+    font-kerning :normal;
+    color : rgb(160, 160, 160);
+    margin : 0px;
+    padding: 0.5rem 2.5rem;
+}
+.TextLarge
+{
+    Font-family : Roboto Light, Arial;
+    font-size : 2.5rem;
+    font-weight: bold;
+    font-variant: small-caps;
+    #color : white;
+    #text-shadow: 0 0 0.7rem rgb(120, 122, 122);  /* even bigger */
+}
+.Text
+{
+    font-size : 1.75rem;
+}
+.TextSmall
+{
+    font-size : 1.25rem;
+}
+.TextSmaller
+{
+    font-size : 1.125rem;
 }
 .Title
 {
-	font-family : Arial;
-	font-size : 32px;
-	font-weight: bold;
-	margin : 0px;
-	margin-top : 10px;
-	padding : 0px;
-	padding-left : 10px;
-	color : rgb(100, 120, 150);	
+    font-size : 2.625rem;
+    color : #c0737a;    
 }
-.Sub_Title
+.SubTitle
 {
-	color : rgb(170, 120, 100);
-	font-family : Arial;
-	font-size : 20px;
-	font-weight : bold;
-	margin : 0px;
-	margin-top : 10px;
-	padding : 0px;
-	padding-left : 10px
+    font-size : 1.75rem;
+    color : rgb(170, 120, 100);
 }
 .Bullet
 {
-	font-family : Arial;
-	font-size : 18px;
-	color : rgb(50, 50, 50);
-	padding : 10px;
-	padding-left : 35px;
-	padding-right : 35px;
-	margin : 0px;
+    font-family : Roboto Light, Arial;
+    font-size : 1.25rem;
+    color : rgb(160, 160, 160);
+    padding : 10px;
+    padding-left : 35px;
+    padding-right : 35px;
+    margin : 0px;
 }
 .BulletCircle
 {
-	color : #333;
-	font-family : Arial;
-	font-size : 18px;
-	list-style-type : circle;
+    color : #333;
+    font-family : Arial;
+    font-size : 1.125rem;
+    list-style-type : circle;
 }
 .Caption
 {
-	font-family : Arial;
-	font-weight : bold;
-	font-size : 18px;
-	color : rgb(50, 50, 50);
-	padding : 0px;
-	padding-top : 10px;
-	padding-left : 10px;
+    text-align: center;
+    font-size : 1.25rem;
+    padding : 0px;
+    padding-top : 20px;
+    padding-bottom : 20px;
+}
+.ContentTextLarge, .ContentText, .ContentTextSmall
+{
+    text-align: left;
+    font-family : Roboto Light, Arial;
+    font-kerning :normal;
+    text-align: justify;
+    color : rgb(120, 120, 120);
+    margin : 0px;
+    padding : 0px;
+    padding-left : 20px;
+    padding-bottom : 10px;
+}
+.ContentTextLarge
+{
+    font-size: 2rem;
+}
+.ContentText
+{
+    font-size: 1.5rem;
+    color : rgb(160, 160, 160);
+}
+.ContentTextSmall
+{
+    font-size: 1.25rem;
+    color : rgb(160, 160, 160);
 }
 
