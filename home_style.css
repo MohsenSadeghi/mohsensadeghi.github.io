@@ -13,6 +13,24 @@
     margin : 0px;
     #padding-bottom: 20px;
 }
+
+@media (max-width: 1000px){
+  table.intro_box, 
+  table.intro_box tbody, 
+  table.intro_box tr{
+    display: block;
+    width: 100%;
+  }
+  table.intro_box td{
+    display: block;
+    width: 100%;
+  }
+  table.intro_box td .intro_photo{
+    width: min(100%, 1000px);
+    height: auto;
+  }
+}
+
 .SocialLinks
 {
     display: flex;
