@@ -50,7 +50,7 @@ const observer = new IntersectionObserver(
 },
 {
   root: null,
-  threshold: [0.0, 0.15],
+  threshold: 0.1,
   // Offset the top edge by the header height so intersection happens earlier
   rootMargin: `-${headerHeight}px 0px 0px 0px`,
 }

@@ -113,22 +113,27 @@ a:active
     color : #ff796c;
     text-decoration : none;
 }
-.TextLarge, .Text, .TextSmall, .TextSmaller, .Title, .SubTitle, .Caption
+.TextLarge, .Text, .TextSmall, .TextSmaller, .Title, .SubTitle, .Caption, .Bullet
 {
+    font-family: Roboto Light, Arial, sans-serif;
+    font-kerning: normal;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    #font-variation-settings: "wdth" 80;
+    
+    vertical-align: top;
     text-align: justify;
     text-justify: inter-word;
-    font-family : Roboto Light, Arial;
-    font-kerning :normal;
     color : rgb(160, 160, 160);
     margin : 0px;
     padding: 0.5rem 2.5rem;
 }
 .TextLarge
 {
-    Font-family : Roboto Light, Arial;
-    font-size : 2.5rem;
-    font-weight: bold;
-    font-variant: small-caps;
+    font-size : 3.0rem;
+    font-variant-caps: small-caps;
+    font-optical-sizing: none;
     #color : white;
     #text-shadow: 0 0 0.7rem rgb(120, 122, 122);  /* even bigger */
 }
@@ -146,30 +151,24 @@ a:active
 }
 .Title
 {
+    vertical-align: bottom;
     font-size : 2.625rem;
     color : #c0737a;    
 }
 .SubTitle
 {
+    vertical-align: bottom;
     font-size : 1.75rem;
     color : rgb(170, 120, 100);
 }
 .Bullet
 {
-    font-family : Roboto Light, Arial;
     font-size : 1.25rem;
     color : rgb(160, 160, 160);
     padding : 10px;
     padding-left : 35px;
     padding-right : 35px;
     margin : 0px;
-}
-.BulletCircle
-{
-    color : #333;
-    font-family : Arial;
-    font-size : 1.125rem;
-    list-style-type : circle;
 }
 .Caption
 {
@@ -179,30 +178,3 @@ a:active
     padding-top : 20px;
     padding-bottom : 20px;
 }
-.ContentTextLarge, .ContentText, .ContentTextSmall
-{
-    text-align: left;
-    font-family : Roboto Light, Arial;
-    font-kerning :normal;
-    text-align: justify;
-    color : rgb(120, 120, 120);
-    margin : 0px;
-    padding : 0px;
-    padding-left : 20px;
-    padding-bottom : 10px;
-}
-.ContentTextLarge
-{
-    font-size: 2rem;
-}
-.ContentText
-{
-    font-size: 1.5rem;
-    color : rgb(160, 160, 160);
-}
-.ContentTextSmall
-{
-    font-size: 1.25rem;
-    color : rgb(160, 160, 160);
-}
-
