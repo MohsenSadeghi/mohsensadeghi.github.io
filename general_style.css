@@ -44,7 +44,7 @@ html, body
     left: 0;
     right: 0;
     height: 120px;
-    background: rgba(255, 250, 235, 0.6); /* semi-transparent white */
+    background: rgba(240, 240, 240, 0.6); /* semi-transparent white */
     backdrop-filter: blur(8px);           /* nice blur effect */
     border-bottom: 1px solid #eee;
     z-index: 1000; /* ensure it’s above sections */
@@ -78,7 +78,7 @@ html, body
     display: inline-block;          /* let padding & border-radius apply around text */
     #padding: 0.15em 0.8em;           /* space inside the "block" */
     #background-color: rgb(200, 200, 200);      /* block background */
-    color: #ff796cbb;                   /* text color */
+    color: rgb(100, 140, 180);                   /* text color */
     backdrop-filter: blur(8px); 
     border-radius: 9999px;             /* rounded corners */
     text-decoration: none;          /* remove default underline */
@@ -88,20 +88,20 @@ html, body
 }
 
 .site-header nav li.is-active > a {
-  #font-weight: 600;
+  font-weight: 600;
   #color: white;                 
-  color: #ff796cff;
+  color: rgb(100, 140, 180);!#ff796cff;
   #border-bottom: 2px solid currentColor; /* or any highlight you like */
 }
 
 a
 {
-    color : #cf6275;
+    color : rgb(100, 140, 180);!#cf6275;
     text-decoration : none;
 }
 a:hover
 {
-    color : #ff796c;
+    color : rgb(120, 160, 200);!#ff796c;
     text-decoration : none;
 }
 a:visited
@@ -125,7 +125,7 @@ a:active
     vertical-align: top;
     text-align: justify;
     text-justify: inter-word;
-    color : rgb(160, 160, 160);
+    color : rgb(110, 110, 110);
     margin : 0px;
     padding: 0.5rem 2.5rem;
 }
@@ -153,13 +153,13 @@ a:active
 {
     vertical-align: bottom;
     font-size : 2.625rem;
-    color : #c0737a;    
+    color : rgb(80, 120, 180);!#c0737a;    
 }
 .SubTitle
 {
     vertical-align: bottom;
     font-size : 1.75rem;
-    color : rgb(170, 120, 100);
+    color : rgb(100, 170, 150);
 }
 .Bullet
 {
