@@ -1,27 +1,137 @@
 /* Introductory section */
-@media (max-width: 1000px) {
-    .intro_box,
-    .intro_box tbody,
-    .intro_box tr {
-        display: block;
-        width: 100%;
-    }
+.intro_box {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(22rem, 2fr);
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - var(--header-height));
+    min-height: calc(100svh - var(--header-height));
+}
 
-    .intro_box td {
-        display: block;
-        width: 100%;
-    }
+.intro_media {
+    align-self: center;
+    min-width: 0;
+    text-align: center;
+}
 
-    .intro_box .intro_photo {
-        width: min(100%, 1000px);
-        height: auto;
-    }
+.intro_photo {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.intro_content {
+    min-width: 0;
+    padding: clamp(2rem, 5vw, 6rem) clamp(1.5rem, 4vw, 5rem);
+}
+
+.intro_content .TextLarge,
+.intro_content .Text {
+    padding-inline: 0;
+}
+
+.intro_affiliations {
+    margin-top: clamp(2rem, 5vw, 4rem);
+    text-align: left;
 }
 
 /* Profile links */
 .SocialLinks {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 2.5rem;
+    gap: 0.625rem;
+    margin-top: 2.5rem;
+}
+
+.SocialLinks img {
+    display: block;
+}
+
+/* Research section */
+.research-item + .research-item {
+    margin-top: clamp(4rem, 8vw, 7rem);
+}
+
+.research-item .section-copy {
+    margin-bottom: 1.5rem;
+}
+
+.research-image {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+.research-image-wide {
+    width: 40%;
+}
+
+.research-image-medium {
+    width: 35%;
+}
+
+.research-video {
+    display: block;
+    width: min(100%, 760px);
+    height: auto;
+    margin: 0 auto;
+}
+
+.Caption figcaption {
+    max-width: 900px;
+    margin: 1rem auto 0;
+}
+
+/* Publications and contact */
+.publication-profile {
+    margin-bottom: 2rem;
+}
+
+.publication-list {
+    margin-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+.publication-list li + li {
+    margin-top: 0.85rem;
+}
+
+#section-contact ul {
+    margin-block: 0 1.5em;
+}
+
+@media (max-width: 1000px) {
+    .intro_box {
+        grid-template-columns: 1fr;
+    }
+
+    .intro_content {
+        padding: 3rem clamp(1.5rem, 8vw, 5rem) 5rem;
+    }
+
+    .research-image-wide,
+    .research-image-medium {
+        width: min(100%, 520px);
+    }
+}
+
+@media (max-width: 700px) {
+    .intro_content {
+        padding: 2.5rem 1.25rem 4rem;
+    }
+
+    .intro_affiliations {
+        margin-top: 2rem;
+    }
+
+    .SocialLinks {
+        margin-top: 2rem;
+    }
+
+    .research-item + .research-item {
+        margin-top: 4rem;
+    }
+
+    .publication-profile {
+        margin-bottom: 1.5rem;
+    }
 }

@@ -28,295 +28,195 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&amp;display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="general_style.css?ver=20260811">
-    <link rel="stylesheet" href="home_style.css?ver=20260811">
+    <link rel="stylesheet" href="general_style.css?ver=20260811-layout2">
+    <link rel="stylesheet" href="home_style.css?ver=20260811-layout1">
 
     <base target="_blank">
 
-    <script src="frame_adjust.js?ver=202512240630" defer></script>
+    <script src="frame_adjust.js?ver=20260811-layout2" defer></script>
 </head>
 
 <body>
     
     <header class="site-header">
-        <table border="0" width = "100%">
-            <tbody>
-                <tr height="120px">
-                    <td id="TitleText" width="20%" style="vertical-align: middle;">
-                        Mohsen Sadeghi
-                    </td>
+        <a id="TitleText" href="#section-about" target="_self">Mohsen Sadeghi</a>
 
-                    <td class="Menu" style="text-align: center; vertical-align: middle;">
-                        <nav aria-label="Primary navigation">
-                          <ul>
-                            <li><a href="#section-about" target="_self">About</a></li>
-                            <li><a href="#section-bio" target="_self">Bio</a></li>
-                            <li><a href="#section-research" target="_self">Research</a></li>
-                            <li><a href="#section-publications" target="_self">Publications</a></li>
-                            <li><a href="#section-contact" target="_self">Contact</a></li>
-                          </ul>
-                        </nav>
-                    </td>
-                    
-                    <td width="20%"></td>
-                    
-                </tr>
-            </tbody>
-        </table>
+        <nav class="Menu" aria-label="Primary navigation">
+            <ul>
+                <li><a href="#section-about" target="_self">About</a></li>
+                <li><a href="#section-bio" target="_self">Bio</a></li>
+                <li><a href="#section-research" target="_self">Research</a></li>
+                <li><a href="#section-publications" target="_self">Publications</a></li>
+                <li><a href="#section-contact" target="_self">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
 
-    <section id="section-about" class="Panel" data-animate style="padding:0">
+    <section id="section-about" class="Panel IntroPanel" data-animate>
+        <div class="intro_box">
+            <div class="intro_media">
+                <img class="intro_photo" src="images/photo_mohsen_2.png?ver=202512240630" alt="Mohsen Sadeghi">
+            </div>
 
-        <table class="intro_box" border="0" width="100%" height="100%" style="padding:0px; margin:0px; border-collapse: collapse;">
-            <tbody>
-                <tr height="120px"></tr>
-                
-                <tr height="70%" style="vertical-align:bottom;">
-                    <td style="text-align: center;" width="60%">
-                        <img class="intro_photo" src = "images/photo_mohsen_2.png?ver=202512240630" alt = "Mohsen Sadeghi" width = "100%"/>
-                    </td>
+            <div class="intro_content">
+                <h1 class="TextLarge">Computational Scientist<br>AI4Science Researcher<br>Entrepreneur</h1>
 
-                    <td width="40%">
-                        <p class="TextLarge">Computational Scientist<br/>AI4Science Researcher<br/>Entrepreneur<br/><br/><br/></p>
-                        <p class="Text">
-                        Research Director at <a href = "https://neurorium.ai/" > Neurorium</a> <br/>
-                        Guest Researcher at <a href = "https://www.zib.de/" > Zuse-Institut Berlin</a> <br />
-                        Guest Researcher at <a href="https://www.mi.fu-berlin.de/en/math/groups/ai4s/index.html">AI4Science group</a>, Freie Universität Berlin
-                        </p>
-                        <!--  <a href = "https://www.mi.fu-berlin.de/en/sfb1114/" > DFG Collaborative Research Center 1114</a> <br /> -->
-                        <!--  <a href = "http://www.mi.fu-berlin.de/en/math/groups/ai4s" > Artificial Intelligence for the Sciences Group </a> <br /> -->
-                        <!-- <a href = "http://www.fu-berlin.de"> Freie Universität Berlin </a> <br /> <br />
-                        <b> PhD in Computational Nanotechnology</b><br />
-                        <a href = "http://nano.sharif.edu" > Institute for Convergence Science &amp; Technology (ICST) </a> <br />
-                        <a href = "http://www.sharif.edu"> Sharif University of Technology </a> <br /> <br />!-->
-                        <br/><br/><br/>
-                        
-                        <nav class="SocialLinks" aria-label="Social profiles">
+                <p class="Text intro_affiliations">
+                    Research Director at <a href="https://neurorium.ai/">Neurorium</a><br>
+                    Guest Researcher at <a href="https://www.zib.de/">Zuse-Institut Berlin</a><br>
+                    Guest Researcher at <a href="https://www.mi.fu-berlin.de/en/math/groups/ai4s/index.html">AI4Science group</a>, Freie Universität Berlin
+                </p>
 
-                        <a
-                        id="cy-effective-orcid-url"
-                        class="underline"
-                         href="https://orcid.org/0000-0002-7698-5630"
-                         target="orcid.widget"
-                         rel="me noopener noreferrer"
-                         style="vertical-align: top">
-                         <img
-                            src="images/logo_ORCID_iD.png?ver=202512240630"
-                            style="width: 32px;"
-                            alt="ORCID iD icon"/>
-                        </a>
-                        
-                        <a id="ResearchGateLink" href="https://www.researchgate.net/profile/Mohsen-Sadeghi-13" rel="me noopener noreferrer">
-                            <img src="images/logo_research_gate.png?ver=202512240630" width="32" height="32" title="ResearchGate" alt="ResearchGate">
-                        </a>
+                <nav class="SocialLinks" aria-label="Social profiles">
+                    <a id="cy-effective-orcid-url" href="https://orcid.org/0000-0002-7698-5630" target="orcid.widget" rel="me noopener noreferrer">
+                        <img src="images/logo_ORCID_iD.png?ver=202512240630" width="32" height="32" alt="ORCID">
+                    </a>
 
-                        <a id="LinkedInLink" href="https://de.linkedin.com/in/drmohsensadeghi" rel="me noopener noreferrer">
-                            <img src="images/logo_linked_in.png?ver=202512240630" width="32" height="32" title="LinkedIn" alt="LinkedIn">
-                        </a>
-                        
-                        <a id="GithubLink" href="https://github.com/MohsenSadeghi" rel="me noopener noreferrer">
-                            <img src="images/logo_github.png?ver=202512240630" width="32" height="32" title="GitHub" alt="GitHub">
-                        </a>
+                    <a id="ResearchGateLink" href="https://www.researchgate.net/profile/Mohsen-Sadeghi-13" rel="me noopener noreferrer">
+                        <img src="images/logo_research_gate.png?ver=202512240630" width="32" height="32" title="ResearchGate" alt="ResearchGate">
+                    </a>
 
-                        <a id="BlueskyLink" href="https://mohsensadeghi.bsky.social" rel="me noopener noreferrer">
-                            <img src="images/logo_bluesky.png?ver=202512240630" width="32" height="32" title="Bluesky" alt="Bluesky">
-                        </a>
+                    <a id="LinkedInLink" href="https://de.linkedin.com/in/drmohsensadeghi" rel="me noopener noreferrer">
+                        <img src="images/logo_linked_in.png?ver=202512240630" width="32" height="32" title="LinkedIn" alt="LinkedIn">
+                    </a>
 
-                        <!--
-                        <a id = "TwitterLink" href = "https://www.x.com/mohsensadeghi">
-                            <img src = "images/logo_x.png?ver=202512240630" width = "32" height = "32" border = "0" title = "X (twitter)" alt = "t">
-                        </a>
-                        -->
+                    <a id="GithubLink" href="https://github.com/MohsenSadeghi" rel="me noopener noreferrer">
+                        <img src="images/logo_github.png?ver=202512240630" width="32" height="32" title="GitHub" alt="GitHub">
+                    </a>
 
-                        
-                        <!--
-                        <a id = "MastodonLink" rel="me" href="https://mas.to/@mohsensadeghi">
-                            <img src = "images/logo_mastodon.png?ver=202512240630" width = "25" height = "25" border = "0" title = "Mastodon" alt = "t">
-                        </a>                
-
-                        <iframe id = "Follow_Frame" src = "follow_me.html" width = "250" height = "36" frameborder = "0" scrolling = "no">
-                            Your browser does not support iframes!
-                        </iframe>
-                        -->
-                        </nav>
-
-                    </td>
-                </tr>
-
-                <tr height="10%"></tr>
-                
-            </tbody>        
-        </table>
-
+                    <a id="BlueskyLink" href="https://mohsensadeghi.bsky.social" rel="me noopener noreferrer">
+                        <img src="images/logo_bluesky.png?ver=202512240630" width="32" height="32" title="Bluesky" alt="Bluesky">
+                    </a>
+                </nav>
+            </div>
+        </div>
     </section>
 
-    <section id="section-bio" class="Panel" data-animate style="padding:0">
-        
-        <table border="0" width="80%" height="100%" style="border-collapse: collapse;">
-            <tbody>
-                <tr height="120px"></tr>
+    <section id="section-bio" class="Panel" data-animate>
+        <div class="section-content">
+            <h2 class="Title">Bio</h2>
 
-                <tr height="10%"><td class="Title">Bio</td></tr>
+            <div class="Text section-copy">
+                <p>
+                    I am a computational scientist with a specialization in the modeling and simulation of biological processes at the mesoscopic scale.
+                    My research plays a key role in quantitative integrative biology, bridging physics-based predictions with biological observables.
+                    Alongside this, I'm actively engaged in the development of deep learning techniques, which enable the automated analysis of microscopy and tomography imaging data.
+                </p>
 
-                <tr><td class="Text">
-                        I am a computational scientist with a specialization in the modeling and simulation of biological processes at the mesoscopic scale.
-                        My research plays a key role in quantitative integrative biology, bridging physics-based predictions with biological observables.
-                        Alongside this, I'm actively engaged in the development of deep learning techniques, which enable the automated analysis of microscopy and tomography imaging data.<br/><br/>
+                <p>For more details and examples, please visit the <a href="#section-research" target="_self">Research</a> section.</p>
 
-                        For more details and examples, please visit the <a href="#section-research" target="_self">Research</a> section. <br/> <br/>
+                <p>I am also a co-founder of the science-based startup, <a href="https://neurorium.ai">Neurorium</a>, dedicated to realizing the computational potential of living neurons.</p>
 
-                        I am also a co-founder of the science-based startup, <a href="https://neurorium.ai"> Neurorium</a>, dedicated to realizing the computational potential of living neurons.<br/><br/>
+                <p>
+                    Born in Tehran, Iran, I attended <a href="https://en.sharif.ir">Sharif University of Technology</a>, where I studied mechanical engineering, and later pursued a PhD in computational nanotechnology.
+                    During this phase, my contributions spanned various research areas, ranging from nonlinear mechanical analysis of nanostructures to molecular simulations of nano-confined fluids.
+                </p>
 
-                        Born in Tehran, Iran, I attended <a href="https://en.sharif.ir">Sharif University of Technology</a>, where I studied mechanical engineering, and later pursued a PhD in computational nanotechnology.
-                        During this phase, my contributions spanned various research areas, ranging from nonlinear mechanical analysis of nanostructures to molecular simulations of nano-confined fluids. <br/> <br/>
+                <p>The <a href="#section-publications" target="_self">Publications</a> section enumerates my peer-reviewed works across these multifaceted disciplines.</p>
 
-                        The <a href="#section-publications" target="_self">Publications</a> section enumerates my peer-reviewed works across these multifaceted disciplines. <br/> <br/>
-
-                        In my free time, I enjoy swimming, bouldering, and reading. I am also a photography enthusiast, and you can check a selection of my works at my <a href="https://500px.com/p/mohsen_the_observer">500px</a> portfolio.
-                    </td>
-                </tr>
-                
-                <tr height="10%"></tr>
-            </tbody>
-        </table>
+                <p>In my free time, I enjoy swimming, bouldering, and reading. I am also a photography enthusiast, and you can check a selection of my works at my <a href="https://500px.com/p/mohsen_the_observer">500px</a> portfolio.</p>
+            </div>
+        </div>
     </section>
     
-    <section id="section-research" class="Panel" data-animate style="padding:0">
-        <table border="0" width="80%" height="100%" style="border-collapse: collapse;">
-            <tbody>
-                <tr height="120px"></tr>
+    <section id="section-research" class="Panel" data-animate>
+        <div class="section-content">
+            <h2 class="Title">Research</h2>
 
-                <tr height="10%"><td class="Title">Research</td></tr>
+            <article class="research-item">
+                <h3 class="SubTitle">Computational model of synaptic vesicle docking</h3>
 
-                <tr><td class="SubTitle">Computational model of synaptic vesicle docking</td></tr>
-                
-                <tr><td class = "Text">
-                    I joined forces with researchers from <a href="https://www.mdc-berlin.de/de">Max Delbrück Center</a> and <a href="https://www.charite.de">Charité &mdash; Universitätsmedizin Berlin</a>,
-                    to look at the docking and fusion of synaptic vesicles in mouse hippocampal neurons.<br/><br/>
-                    Extremely detailed insights, derived from meticulous cryo-ET experiments and tomographic data analysis, effectively streamlined the construction of a computational model of the process.<br/><br/>
-                    My mesoscopic simulations unveiled the kinetics of the process in clear detail, highlighted the role of membrane-curving particles mimicking synaptotagmin C2B domain, and helped test a hypothesis on how the concentration of these particles can adversely affect the docking kinetics.<br/><br/>
-                    Read the rest of the details, including how we developed a Markov state model of the docking and fusion process, in the paper published in <a href = "https://doi.org/10.1038/s41467-025-67291-6">Nature Communications</a>.<br/><br/>
-                    You can also check the <a href="https://www.charite.de/service/pressemitteilung/artikel/detail/synapsen_bei_der_arbeit_zusehen">press release</a> from Charité &mdash; Universitätsmedizin Berlin (in German).
-                </td></tr>
-                <tr><td class = "Caption">
-                        <a href="https://doi.org/10.1038/s41467-025-67291-6"><img src = "images/research_sv_docking.png" width="40%" alt = "Mesoscopic model of the synaptic vesicle docking. &copy; Mohsen Sadeghi." border = "0"></a><br/><br/>
-                        Mesoscopic model of the synaptic vesicle docking. &copy; Mohsen Sadeghi.
-                </td></tr>
+                <div class="Text section-copy">
+                    <p>I joined forces with researchers from <a href="https://www.mdc-berlin.de/de">Max Delbrück Center</a> and <a href="https://www.charite.de">Charité &mdash; Universitätsmedizin Berlin</a>, to look at the docking and fusion of synaptic vesicles in mouse hippocampal neurons.</p>
+                    <p>Extremely detailed insights, derived from meticulous cryo-ET experiments and tomographic data analysis, effectively streamlined the construction of a computational model of the process.</p>
+                    <p>My mesoscopic simulations unveiled the kinetics of the process in clear detail, highlighted the role of membrane-curving particles mimicking synaptotagmin C2B domain, and helped test a hypothesis on how the concentration of these particles can adversely affect the docking kinetics.</p>
+                    <p>Read the rest of the details, including how we developed a Markov state model of the docking and fusion process, in the paper published in <a href="https://doi.org/10.1038/s41467-025-67291-6">Nature Communications</a>.</p>
+                    <p>You can also check the <a href="https://www.charite.de/service/pressemitteilung/artikel/detail/synapsen_bei_der_arbeit_zusehen">press release</a> from Charité &mdash; Universitätsmedizin Berlin (in German).</p>
+                </div>
 
-                <tr><td class="SubTitle">Mesoscopic model of human cytomegalovirus</td></tr>
-                
-                <tr><td class = "Text">
-                    In a recent collaboration with researchers from <a href="https://www.theliulab.com">FMP Berlin</a> and <a href="https://www.charite.de/">Charité Berlin</a>, we built a comprehensive model of the human cytomegalovirus (HCMV) virion.
-                    We used information from quantitative proteomics as well as cross-linking mass spectrometry to model a wide range of viral and host proteins inside the virion. 
-                    Models of glycoproteins (shown in red in the image) as well as the capsid (blue-green particles in the image) are built from cryoEM and/or AlphaFold2 predictions. <br/><br/>
+                <figure class="Caption">
+                    <a href="https://doi.org/10.1038/s41467-025-67291-6"><img class="research-image research-image-wide" src="images/research_sv_docking.png" alt="Mesoscopic model of the synaptic vesicle docking. &copy; Mohsen Sadeghi."></a>
+                    <figcaption>Mesoscopic model of the synaptic vesicle docking. &copy; Mohsen Sadeghi.</figcaption>
+                </figure>
+            </article>
 
-                    Large-scale simulations using this model lead to predictions about the role of pp150 protein in organizing the tegument proteins into a three-layer structure.<br/><br/>
-                    
-                    Further details of the model and simulations can be found in our <a href="https://doi.org/10.1038/s41564-023-01433-8"><i>Nature Microbiology</i></a> paper.<br/><br/>
-                    You can also read more in the <a href="https://leibniz-fmp.de/de/newsroom/news/detail/how-does-the-herpes-virus-hcmv-deceive-its-host-cells">press release</a> from FMP Berlin (in German).
-                </td></tr>
-                <tr><td class = "Caption">
-                        <a href="https://doi.org/10.1038/s41564-023-01433-8"><img src = "images/research_HCMV_section.png" width="35%" alt = "Sectioned view of the coarse-grained model of HCMV. &copy; Mohsen Sadeghi." border = "0"></a><br/>
-                        Sectioned view of the mesoscopic model of the HCMV. &copy; Mohsen Sadeghi.
-                </td></tr>
-                    
-                <tr><td class="SubTitle">Particle-based modeling of biomembranes</td></tr>
-                
-                <tr><td class = "Text">
-                    For a while, my main research focus was on modeling membrane-involved biological processes.
-                    As my main simulation tool, I developed a highly coarse-grained model of bilayer membranes.<br/><br/>
-                    
-                    This model mimics the mechanics of the membrane via bonded interactions, with a force field optimized against the energy density predicted by the curvature elasticity of the membrane.<br/><br/>
-                    I further complemented this membrane model with a hydrodynamic coupling scheme, as detailed in my 2020 <a href="https://doi.org/10.1038/s41467-020-16424-0"><i>Nature Communications</i></a> paper.<br/><br/>
-                    You can see the model in action by checking this <a href = "https://simularium.allencell.org/viewer?trajFileName=nanoparticle_wrapping.simularium">Simularium visualization</a> (by Allen Institute) of my simulation of a nanoparticle being wrapped by the membrane.<br/><br/>
-                    Finally, I implemented "force field masking" to incorporate membrane-bending peripheral proteins in the model (blue particles in the movie).
-                    Predictions about the interplay between flexible peripheral proteins and the dynamic membrane are the basis of several publications, including this <a href = "https://doi.org/10.1021/acs.jpclett.1c02954"><i>Journal of Physical Chemistry Letters</i></a> paper.<br/><br/>
-                </td></tr>
-                <tr><td class = "Caption">
-                        <video height="400" controls>
-                            <source src="movies/research_shiga_aggregation.mp4?ver=202512240630" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video> <br/> <br/>
-                        Aggregation of membrane-bending peripheral proteins on the membrane due to implicit membrane-mediated interactions. &copy; Mohsen Sadeghi.
-                </td></tr>
-                <tr><td class = "Caption">
-                        <a href="https://doi.org/10.1063/1.5009107"><img src = "images/research_nanoparticle_wrapping.png?ver=202512240630" width="35%" alt = "Endocytosis of spherical nanoparticles. &copy; Mohsen Sadeghi." border = "0"></a><br/><br/>
-                            Endocytosis of a spherical nanoparticle: nanoparticle is being wrapped by the fluid membrane as result of surface adhesion. &copy; Mohsen Sadeghi.
-                </td></tr>
+            <article class="research-item">
+                <h3 class="SubTitle">Mesoscopic model of human cytomegalovirus</h3>
 
-                <tr><td class="SubTitle">Deep-SXT</td></tr>
-                <tr><td class = "Text">
-                    In a collaborative research between <a href="https://fu-berlin.de">Freie Universität Berlin</a> and <a href="https://www.helmholtz-berlin.de/">Helmholtz-Zentrum Berlin</a>, we looked at tomograms of eukaryotic cells with nanometer-scale resolutions. These tomograms are obtained through soft x-ray imaging facilitated by a synchrotron light source (cryo-soft x-ray tomography). <br/><br/>
-                    I developed a software for semi-supervised deep learning-based segmentation and 3D reconstruction of these tomograms, based on few manual labels provided by experts.<br/><br/>
-                    My software, which was developed using TensorFlow, and the trained network weights are freely available under the MIT license.
-                    You can download the software from the GitHub repository <a href="https://github.com/noegroup/deep_sxt">github.com/noegroup/deep_sxt</a> and follow the instructions for setting up your local pipeline.
-                </td></tr>
-                <tr><td class = "Caption">
-                        <a href="https://doi.org/10.1073/pnas.2209938120"><img src = "images/research_tomo.png?ver=202512240630" width="40%" alt = "Surface reconstruction of a cryo-soft x-ray tomogram using deep learning." border = "0"></a><br/> <br/>
-                            3D reconstruction of a cryo-soft x-ray tomogram using semi-supervised deep learning. &copy; Mohsen Sadeghi.
-                </td></tr>
+                <div class="Text section-copy">
+                    <p>In a recent collaboration with researchers from <a href="https://www.theliulab.com">FMP Berlin</a> and <a href="https://www.charite.de/">Charité Berlin</a>, we built a comprehensive model of the human cytomegalovirus (HCMV) virion. We used information from quantitative proteomics as well as cross-linking mass spectrometry to model a wide range of viral and host proteins inside the virion. Models of glycoproteins (shown in red in the image) as well as the capsid (blue-green particles in the image) are built from cryoEM and/or AlphaFold2 predictions.</p>
+                    <p>Large-scale simulations using this model lead to predictions about the role of pp150 protein in organizing the tegument proteins into a three-layer structure.</p>
+                    <p>Further details of the model and simulations can be found in our <a href="https://doi.org/10.1038/s41564-023-01433-8"><i>Nature Microbiology</i></a> paper.</p>
+                    <p>You can also read more in the <a href="https://leibniz-fmp.de/de/newsroom/news/detail/how-does-the-herpes-virus-hcmv-deceive-its-host-cells">press release</a> from FMP Berlin (in German).</p>
+                </div>
 
-                <tr><td class="SubTitle">In-Browser Molecular Dynamics (IBMD)</td></tr>
-                <tr><td class = "Text">
-                    This is a hobby project of mine from 2014. I implemented a JavaScript-based molecular dynamics code that runs in your browser and has a graphical output of the trajectory 
-                    as well as numerical and plot outputs of thermodynamic properties such as pressure. All outputs are in sync and reflect the current state of the simulation. In some cases, 
-                    the simulation can be tweaked by changing the setpoint temperature or pressure, and particles can be added or removed from the simulation box by simply clicking on it. <br /><br />
-                    
-                    Check it out here: <a href="https://userpage.fu-berlin.de/sadeghi/IBMD">In-Browser Molecular Dynamics (IBMD)</a>.
-                </td></tr>
+                <figure class="Caption">
+                    <a href="https://doi.org/10.1038/s41564-023-01433-8"><img class="research-image research-image-medium" src="images/research_HCMV_section.png" alt="Sectioned view of the coarse-grained model of HCMV. &copy; Mohsen Sadeghi."></a>
+                    <figcaption>Sectioned view of the mesoscopic model of the HCMV. &copy; Mohsen Sadeghi.</figcaption>
+                </figure>
+            </article>
 
-                <tr height="10%"></tr>
+            <article class="research-item">
+                <h3 class="SubTitle">Particle-based modeling of biomembranes</h3>
 
-            </tbody>
-        </table>
-    <!--
-    <p class = "Sub_Title"> Simulation of Water inside Carbon Nanotubes</p>
-    <p class = "Text"> Currently, I am working on the Monte Carlo and Molecular Dynamics simulation of water confined inside carbon nanotubes as
-                        my PhD research. </p>
-    <p class = "Text"> I use my own C++ codes developed for the purpose. The SPC/E water model is majorly used for the simulations. Simulations
-                        are performed in several statistical ensembles (such as NVT and μVT). I am focused on the study of molecular configurations,
-                        phase transitions, and equation of state of water inside carbon nanotubes.</p> <br>
+                <div class="Text section-copy">
+                    <p>For a while, my main research focus was on modeling membrane-involved biological processes. As my main simulation tool, I developed a highly coarse-grained model of bilayer membranes.</p>
+                    <p>This model mimics the mechanics of the membrane via bonded interactions, with a force field optimized against the energy density predicted by the curvature elasticity of the membrane.</p>
+                    <p>I further complemented this membrane model with a hydrodynamic coupling scheme, as detailed in my 2020 <a href="https://doi.org/10.1038/s41467-020-16424-0"><i>Nature Communications</i></a> paper.</p>
+                    <p>You can see the model in action by checking this <a href="https://simularium.allencell.org/viewer?trajFileName=nanoparticle_wrapping.simularium">Simularium visualization</a> (by Allen Institute) of my simulation of a nanoparticle being wrapped by the membrane.</p>
+                    <p>Finally, I implemented "force field masking" to incorporate membrane-bending peripheral proteins in the model (blue particles in the movie). Predictions about the interplay between flexible peripheral proteins and the dynamic membrane are the basis of several publications, including this <a href="https://doi.org/10.1021/acs.jpclett.1c02954"><i>Journal of Physical Chemistry Letters</i></a> paper.</p>
+                </div>
 
-    <p class = "Caption" align = "center">
-    
-    <img src = "images/r74_p148_tilted.png" alt = "Water inside 0.74 nm CNT" border = "0"> <br> <br>
-        <b> Figure 1. </b> Snapshot of the equilibrium configuration of 148 Water molecules inside a 0.74 nm carbon nanotube.
-    </p> <br> <br>
-    
-    <p class = "Sub_Title"> Nonlinear Mechanical Analysis of Carbon Nanostructures</p>
-    <p class = "Text"> I was involved in nonlinear mechanical analysis of carbon nanostructures (such as carbon nanotubes and graphene) as my MSc research.
-                        I developed a novel structural element for mechanical modeling of carbon nanostructures based on modified Morse interatomic potential.
-                        This element, which was named the hybrid atomistic-structural element (HASE) at the time, was used to model mechanical stability and buckling,
-                        nonlinear vibrations, large deformations, and even electromechanical analysis of nanostructures. Further information are provided in my papers,
-                        my MSc thesis, and of course, in my book. </p>
-    <p class = "Text"> Simulations were performed using MATLAB codes at first. Subsequently, I started developing an independant software for the purpose using Delphi.
-                        The software is still under development by other students using the HASE for mechanical analyses.</p> <br>
+                <figure class="Caption">
+                    <video class="research-video" width="1666" height="1098" controls>
+                        <source src="movies/research_shiga_aggregation.mp4?ver=202512240630" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>Aggregation of membrane-bending peripheral proteins on the membrane due to implicit membrane-mediated interactions. &copy; Mohsen Sadeghi.</figcaption>
+                </figure>
 
-    <p class = "Caption" align = "center">
-    
-    <img src = "images/post_buckling_torsion.png" alt = "Torsional buckling" width = "400" height = "400" border = "0"> <br> <br>
-        <b> Figure 2. </b> Post-buckling structures of a (7,7) carbon nanotube under torsion modeled using the hybrid atomistic-structural element.
-    </p>
-    -->
-        
+                <figure class="Caption">
+                    <a href="https://doi.org/10.1063/1.5009107"><img class="research-image research-image-medium" src="images/research_nanoparticle_wrapping.png?ver=202512240630" alt="Endocytosis of spherical nanoparticles. &copy; Mohsen Sadeghi."></a>
+                    <figcaption>Endocytosis of a spherical nanoparticle: nanoparticle is being wrapped by the fluid membrane as result of surface adhesion. &copy; Mohsen Sadeghi.</figcaption>
+                </figure>
+            </article>
+
+            <article class="research-item">
+                <h3 class="SubTitle">Deep-SXT</h3>
+
+                <div class="Text section-copy">
+                    <p>In a collaborative research between <a href="https://fu-berlin.de">Freie Universität Berlin</a> and <a href="https://www.helmholtz-berlin.de/">Helmholtz-Zentrum Berlin</a>, we looked at tomograms of eukaryotic cells with nanometer-scale resolutions. These tomograms are obtained through soft x-ray imaging facilitated by a synchrotron light source (cryo-soft x-ray tomography).</p>
+                    <p>I developed a software for semi-supervised deep learning-based segmentation and 3D reconstruction of these tomograms, based on few manual labels provided by experts.</p>
+                    <p>My software, which was developed using TensorFlow, and the trained network weights are freely available under the MIT license. You can download the software from the GitHub repository <a href="https://github.com/noegroup/deep_sxt">github.com/noegroup/deep_sxt</a> and follow the instructions for setting up your local pipeline.</p>
+                </div>
+
+                <figure class="Caption">
+                    <a href="https://doi.org/10.1073/pnas.2209938120"><img class="research-image research-image-wide" src="images/research_tomo.png?ver=202512240630" alt="Surface reconstruction of a cryo-soft x-ray tomogram using deep learning."></a>
+                    <figcaption>3D reconstruction of a cryo-soft x-ray tomogram using semi-supervised deep learning. &copy; Mohsen Sadeghi.</figcaption>
+                </figure>
+            </article>
+
+            <article class="research-item">
+                <h3 class="SubTitle">In-Browser Molecular Dynamics (IBMD)</h3>
+
+                <div class="Text section-copy">
+                    <p>This is a hobby project of mine from 2014. I implemented a JavaScript-based molecular dynamics code that runs in your browser and has a graphical output of the trajectory as well as numerical and plot outputs of thermodynamic properties such as pressure. All outputs are in sync and reflect the current state of the simulation. In some cases, the simulation can be tweaked by changing the setpoint temperature or pressure, and particles can be added or removed from the simulation box by simply clicking on it.</p>
+                    <p>Check it out here: <a href="https://userpage.fu-berlin.de/sadeghi/IBMD">In-Browser Molecular Dynamics (IBMD)</a>.</p>
+                </div>
+            </article>
+        </div>
     </section>
     
-    <section id="section-publications" class="Panel" data-animate style="padding:0">
-        <table border="0" width="80%" height="100%" style="border-collapse: collapse;">
-            <tbody>
-                <tr height="120px"></tr>
+    <section id="section-publications" class="Panel" data-animate>
+        <div class="section-content">
+            <h2 class="Title">Publications</h2>
+            <p class="Text publication-profile"><a href="https://scholar.google.com/citations?user=1Qh4VKcAAAAJ&amp;hl=en">My Google Scholar profile</a></p>
 
-                <tr height="10%"><td class = "Title">Publications</td></tr>
-                <tr height="10%"><td class = "Text"><a href="https://scholar.google.com/citations?user=1Qh4VKcAAAAJ&amp;hl=en">My Google Scholar profile</a></td></tr>
+            <h3 class="SubTitle">Journal articles</h3>
 
-                <tr><td class="SubTitle">Journal articles</td></tr>
-
-                <tr style="text-align: center;vertical-align:top;">
-                    
-                    <td class="Text">
-                        <ol class = "Bullet">
+            <ol class="Bullet publication-list">
                             <li> Harris, S. A., Lattanzi, G., Rosa, A., Everaers, R., Papoian, G., Vidal, A., Brown, C., Liverpool, T., Pasos-Trejo, A., <b>Sadeghi, M.</b>, Khalid, S., Ramanathan, A., Henrich, O., Dougan, L., Freyberg, Z., Pezeshkian, W., Sept, D., Geiger, B., Beccaria, R., … Carnovale, F., <a href="https://doi.org/10.1016/j.bpj.2026.07.016">Meso-soup: A Community Approach to Building a Computational Description of the Biological Mesoscale</a>, <i>Biophysical Journal</i> (2026) 2606.05541.</li>
                             <li> von Seggern, B., <b>Sadeghi, M.</b>, “<a href = "https://doi.org/10.48550/arXiv.2606.05541">Methods for Inferring Interaction Potentials from Cross-Linking Mass Spectrometry Data</a>”, <i>arXiv</i> (2026) 2606.05541.</li>
                             <li> Kroll, J., Kravčenko, U., <b>Sadeghi, M.</b>, Diebolder, C. A., Ivanov, L., Lubas, M., Sprink, T., Schacherl, M., Kudryashev, M., Rosenmund, C., “<a href = "https://doi.org/10.1038/s41467-025-67291-6">Dynamic nanoscale architecture of synaptic vesicle fusion in mouse hippocampal neurons</a>”, <i>Nature Communications</i> (2025) 16:11131. </li>
@@ -343,58 +243,40 @@
                             <li> Montazeri, A., <b>Sadeghi, M.</b>, Naghdabadi, R., Rafii-Tabar, H., “<a href = "https://doi.org/10.1016/j.commatsci.2010.05.047">Computational modeling of the transverse-isotropic elastic properties of single-walled carbon nanotubes</a>”, <i> Computational Materials Science </i> (2010) 49:544-551.</li>
                             <li> <b>Sadeghi, M.</b>, Naghdabadi, R., “<a href = "https://dx.doi.org/10.1504/IJNM.2010.033879">Stability analysis of carbon nanotubes using a hybrid atomistic-structural element</a>”, <i> International Journal of Nanomanufacturing </i> (2009) 5(3/4):366-375 </li>
                             <li> <b>Sadeghi, M.</b>, Ozmaian, M., Naghdabadi, R., “<a href = "https://doi.org/10.1088/0022-3727/41/20/205411">Stability analysis of carbon nanotubes under electric fields and compressive loading</a>”, <i> Journal of Physics D: Applied Physics </i> (2008) 41:205411. </li>
-                        </ol>
-                    </td>
-                    
-                </tr>
-                
-                <tr><td class="SubTitle">Books &amp; Chapters</td></tr>
-                <tr style="text-align: center;vertical-align:top;">
-                    
-                    <td class="Text">
-                        <ol class = "Bullet">
+            </ol>
+
+            <h3 class="SubTitle">Books &amp; Chapters</h3>
+
+            <ol class="Bullet publication-list">
                             <li> <b>Sadeghi, M.</b>, Rosenberger, D., 2024 “<a href = "https://doi.org/10.1016/bs.mie.2024.03.018">Dynamic framework for large-scale modeling of membranes and peripheral proteins</a>” in <i>MIE 701: Biophysical Approaches for the Study of Membrane Structure Part B</i>, ed. Markus Deserno, Tobias Baumgart, (Elsevier: Methods in Enzymology, Academic Press). </li>
                             <li> <b>Sadeghi, M.</b> 2010 “<a href = "https://www.amazon.com/Nonlinear-Mechanical-Analysis-Carbon-Nanostructures/dp/3843369917/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1292540760&amp;sr=1-1">Nonlinear mechanical analysis of carbon nanostructures: Numerical simulation using the hybrid atomistic-structural method</a>” <i>(Saarbrücken: Lambert Academic Publishing).</i> </li>
-                        </ol>
-                    </td>
-                    
-                </tr>
-
-                <tr height="10%"></tr>
-            </tbody>
-        </table>
+            </ol>
+        </div>
     </section>
     
-    <section id="section-contact" class="Panel" data-animate style="padding:0">
-        
-        <table border="0" width="80%" height="100%" style="border-collapse: collapse;">
-            <tbody>
-                <tr height="120px"></tr>
+    <section id="section-contact" class="Panel" data-animate>
+        <div class="section-content">
+            <h2 class="Title">Contact</h2>
 
-                <tr height="10%"><td class = "Title">Contact</td></tr>
-                
-                <tr><td class="Text">
-                    If you:
+            <div class="Text section-copy">
+                <p>If you:</p>
                     <ul>
                         <li>would like to know more about me or what I do,</li>
                         <li>are interested in a collaboration,</li>
                         <li>have a suggestion or remark about my work or this website,</li>
                         <li>are looking to hire me,</li>
                     </ul>
-                    I'd love to talk to you!<br/><br/>
-                    
-                    Feel free to send me an email to any of these addresses:<br/><br/>
-                    sadeghi [at] zib.de <br/>
-                    mohsen.sadeghi [at] fu-berlin.de<br/><br/>
-                
-                    or find me on <a href="https://de.linkedin.com/in/drmohsensadeghi">LinkedIn</a>.
-                </td></tr>
+                <p>I'd love to talk to you!</p>
 
-                <tr height="10%"></tr>
-                
-            </tbody>
-        </table>
-        
+                <p>
+                    Feel free to send me an email to either of these addresses:<br>
+                    sadeghi [at] zib.de<br>
+                    mohsen.sadeghi [at] fu-berlin.de
+                </p>
+
+                <p>Or find me on <a href="https://de.linkedin.com/in/drmohsensadeghi">LinkedIn</a>.</p>
+            </div>
+        </div>
     </section>
 
     </main>
