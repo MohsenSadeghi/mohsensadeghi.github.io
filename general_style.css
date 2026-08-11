@@ -115,10 +115,10 @@ a:active
 }
 .TextLarge, .Text, .TextSmall, .TextSmaller, .Title, .SubTitle, .Caption, .Bullet
 {
-    font-family: Roboto Light, Arial, sans-serif;
+    font-family: Roboto, Arial, sans-serif;
     font-kerning: normal;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
     #font-variation-settings: "wdth" 80;
     
