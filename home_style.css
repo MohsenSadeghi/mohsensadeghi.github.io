@@ -1,87 +1,27 @@
-.Menu
-{
-    font-family : Roboto, Arial, sans-serif;
-    font-kerning :normal;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-    font-size : 1.5rem;
+/* Introductory section */
+@media (max-width: 1000px) {
+    .intro_box,
+    .intro_box tbody,
+    .intro_box tr {
+        display: block;
+        width: 100%;
+    }
 
-    text-align: center;
-    color : rgb(120, 120, 120);
-    margin : 0px;
-    #padding-bottom: 20px;
+    .intro_box td {
+        display: block;
+        width: 100%;
+    }
+
+    .intro_box .intro_photo {
+        width: min(100%, 1000px);
+        height: auto;
+    }
 }
 
-@media (max-width: 1000px){
-  table.intro_box, 
-  table.intro_box tbody, 
-  table.intro_box tr{
-    display: block;
-    width: 100%;
-  }
-  table.intro_box td{
-    display: block;
-    width: 100%;
-  }
-  table.intro_box td .intro_photo{
-    width: min(100%, 1000px);
-    height: auto;
-  }
-}
-
-.SocialLinks
-{
+/* Profile links */
+.SocialLinks {
     display: flex;
-    #justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    padding: 2.5rem
-}
-
-#Counter_Frame
-{
-    position : fixed;
-    bottom : 10px;
-    right : 10px;   
-}
-#Link_Back
-{
-    position : fixed;
-    bottom : 10px;
-    right : 100px;  
-}
-#TitleText
-{
-    font-family : Roboto, Arial, sans-serif;
-    font-kerning :normal;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-
-    font-size : 2.5rem;
-
-    color : rgb(110, 110, 110);
-    margin : 0px;
-    padding: 0px;
-    padding-left:50px;
-}
-.ProfilePhoto {
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.ImageBox {
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.ImageBox img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+    padding: 2.5rem;
 }
