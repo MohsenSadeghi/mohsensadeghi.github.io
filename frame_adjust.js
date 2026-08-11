@@ -13,18 +13,6 @@ navLinks.forEach((link) => {
   linkById[id] = link;
 });
 
-const revealObserver = new IntersectionObserver((entries, observer) => {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) return;
-
-    entry.target.classList.add('in-view');
-    observer.unobserve(entry.target);
-  });
-}, {
-  rootMargin: `-${headerHeight}px 0px 0px 0px`,
-  threshold: 0,
-});
-
 const setActiveLink = (id) => {
   const correspondingLink = linkById[id];
   if (!correspondingLink) return;
@@ -39,23 +27,56 @@ document.querySelectorAll('a[href^="#section-"]').forEach((link) => {
     const target = document.querySelector(link.hash);
     if (!target) return;
 
-    target.classList.add('in-view');
+    target.classList.remove('in-view');
     setActiveLink(target.id);
-  });
-});
 
-const navigationObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting && entry.target.id) {
-      setActiveLink(entry.target.id);
+    const targetBounds = target.getBoundingClientRect();
+    const targetIsVisible = targetBounds.bottom > headerHeight
+      && targetBounds.top < window.innerHeight * 0.85;
+
+    if (targetIsVisible) {
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => target.classList.add('in-view'));
+      });
     }
   });
-}, {
-  rootMargin: `-${headerHeight}px 0px -70% 0px`,
-  threshold: 0,
 });
 
-els.forEach((el) => {
-  revealObserver.observe(el);
-  navigationObserver.observe(el);
-});
+const updateSections = () => {
+  const revealBottom = window.innerHeight * 0.85;
+  const navigationLine = headerHeight + Math.min(200, window.innerHeight * 0.2);
+  let activeSection = null;
+
+  els.forEach((section) => {
+    const bounds = section.getBoundingClientRect();
+    const isVisible = bounds.bottom > headerHeight && bounds.top < revealBottom;
+
+    section.classList.toggle('in-view', isVisible);
+
+    if (bounds.top <= navigationLine && bounds.bottom > navigationLine) {
+      activeSection = section;
+    }
+  });
+
+  if (activeSection?.id) {
+    setActiveLink(activeSection.id);
+  }
+};
+
+let updateScheduled = false;
+
+const scheduleSectionUpdate = () => {
+  if (updateScheduled) return;
+
+  updateScheduled = true;
+  requestAnimationFrame(() => {
+    updateSections();
+    updateScheduled = false;
+  });
+};
+
+window.addEventListener('scroll', scheduleSectionUpdate, { passive: true });
+window.addEventListener('resize', scheduleSectionUpdate);
+window.addEventListener('load', scheduleSectionUpdate);
+
+updateSections();
